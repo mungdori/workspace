@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+      .box {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("./day13-1.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      .title {
+        font-size: 80px;
+        color: white;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: fit-content;
+        transform: translate(-50%, -50%);
+        opacity: 0.6;
+      }
+      body:hover .box {
+        animation: anizoom 5s forwards;
+      }
+      
+        @keyframes anizoom{
+                0%{ opacity: 1.0; transform: scale(1);}
+                50%{ opacity: 0.0; transform: scale(1.5);}
+                100%{ opacity: 1.0; transform: scale(1);}
+
+        }
+      
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="title">frontend 환영합니다.</h1>
+    </div>
+  </body>
+</html>
