@@ -7,16 +7,26 @@
     <title>Document</title>
 </head>
 <body>
+
+
+  <input type="button" onclick="clickme();" value="dd">
+    <button id="a-button">버튼</button>
+
+
     
 </body>
 </html>
 
 <script>
-  function sum (a,b){
-    console.log(a+"더하기"+b+"은 " +(a+b)+"입니다");
-    
-  }
+function clickme (){
+  alert("버튼을 클릭")
 
-  sum(2,3);
+
+}
+
+var a = document.getElementById("a-button");
+a.onclick =function(){
+  alert ("버튼을 클릭하였음")
+};
 
 </script>
